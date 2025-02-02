@@ -4,6 +4,10 @@ GET http://localhost:8080/api/runs/findAll
 ### Find Run by ID
 GET http://localhost:8080/api/runs/1
 
+### Find Run by ID that doesn't exist
+GET http://localhost:8080/api/runs/199
+
+
 ### Create Run
 POST http://localhost:8080/api/runs
 Content-Type: application/json
@@ -13,6 +17,19 @@ Content-Type: application/json
   "title": "Intellij API",
   "startedOn": "2025-02-01T19:02:51.338587",
     "completedOn": "2025-02-02T19:02:51.33859",
+  "miles": 10,
+  "location": "OUTDOOR"
+}
+
+### Create Run with not Title
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "id": 6,
+  "title": "",
+  "startedOn": "2025-02-01T19:02:51.338587",
+  "completedOn": "2025-02-02T19:02:51.33859",
   "miles": 10,
   "location": "OUTDOOR"
 }

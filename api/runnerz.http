@@ -1,0 +1,18 @@
+### Find ALL Runs
+GET http://localhost:8080/api/runs/findAll
+
+### Find Run by ID
+GET http://localhost:8080/api/runs/1
+
+### Create Run
+POST http://localhost:8080/api/runs
+Content-Type: application/json
+
+{
+  "id": 5,
+  "title": "Intellij API",
+  "startedOn": "2025-02-01T19:02:51.338587",
+    "completedOn": "2025-02-02T19:02:51.33859",
+  "miles": 10,
+  "location": "OUTDOOR"
+}
